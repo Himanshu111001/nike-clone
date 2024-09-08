@@ -9,7 +9,6 @@
 .header {
   background-color: rgba(128, 128, 128, 0.0431372549);
   width: 100%;
-  height: 173px;
 }
 
 .navigation {
@@ -362,8 +361,10 @@
 .latest__cards {
   display: flex;
   gap: 10px;
+  overflow-x: hidden;
 }
 .latest__card {
+  flex: 0 0 33.33%;
   display: flex;
   flex-direction: column;
 }
@@ -406,12 +407,6 @@
   }
   .featured__banner--img-overlay button {
     font-size: 18px;
-  }
-  .latest__cards {
-    overflow-x: scroll;
-  }
-  .latest__card {
-    flex-shrink: 0;
   }
 }
 @media (max-width: 600px) {
@@ -466,5 +461,11 @@
   .featured__banner--img-overlay button {
     background-color: #000;
     color: #fff;
+  }
+  .latest__cards {
+    overflow-x: auto;
+  }
+  .latest__card {
+    flex: 0 0 80%;
   }
 }/*# sourceMappingURL=style.css.map */
