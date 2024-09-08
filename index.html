@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/fcce8be489.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- HEADER start  -->
+
+    <header class="header">
+
+        <!-- NAVIGATION start -->
+        <div class="navigation">
+            <div class="navigation__logo">
+                <img src="./img/logo-air.png" alt="">
+            </div>
+            <div class="navigation__links">
+                <ul>
+                    <li>Find a Store</li>
+                    <li>Help</li>
+                    <li>Join Us</li>
+                    <li>Sign In</li>
+                </ul>
+            </div>
+        </div>
+        <!-- NAVIGATION end -->
+
+        <!-- CATEGORIES start  -->
+        <div class="categories">
+            <div class="categories__logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="categories__links">
+                <ul>
+                    <li>New & Featured</li>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>Sale</li>
+                    <li>Customise</li>
+                    <li>Sneakers</li>
+                </ul>
+            </div>
+            <div class="categories__icons">
+                <ul>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><i class="fa-regular fa-heart"></i></li>
+                    <li><i class="fa-solid fa-bag-shopping"></i></li>
+                    <li><i onclick="openNav()" class="fa-solid fa-bars"></i></li>
+                </ul>
+            </div>
+        </div>
+        <!-- CATEGORIES end  -->
+
+        <!-- IMPORTANT start  -->
+        <div class="important">
+            <p>New Styles On Sale: Up To 40% Off</p>
+            <a href="">Shop All Our New Markdowns</a>
+        </div>
+        <!-- IMPORTANT end  -->
+
+        <!-- NAVBAR-MOBILE start  -->
+        <div class="menu__container" id="navMobile">
+            <div class="menu" id="nav">
+                <div class="menu__toggle-btn">
+                    <i onclick="closeNav()" class="fa-solid fa-x"></i>
+                </div>
+
+                <ul class="menu__categories">
+                    <li>
+                        <div>
+                            <a href="#">New & Featured</a>
+                            <p>></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">Men</a>
+                            <p>></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">Women</a>
+                            <p>></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">Kids</a>
+                            <p>></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">Sale</a>
+                            <p>></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">Customize</a>
+                            <!-- <p>></p> -->
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">Sneakers</a>
+                            <!-- <p>></p> -->
+                        </div>
+                    </li>
+                </ul>
+                <div class="menu__header">
+                    <img src="./img/logo-air.png" alt="">
+                    <a href="#">Jordan</a>
+                </div>
+                <div class="menu__register">
+                    <div class="menu__register--content">
+                        <p>Become a Nike member for the best products, inspiration and stories in sports. <span>Learn
+                                more</span></p>
+                    </div>
+                    <div class="menu__register--btn">
+                        <button class="join">Join Us</button>
+                        <button class="sign">Sign In</button>
+                    </div>
+                </div>
+                <ul class="menu__important-links">
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-question"></i>
+                            <a href="">Help</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <a href="">Bag</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-box"></i>
+                            <a href="">Orders</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-store"></i>
+                            <a href="">Find a Store</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- NAVBAR-MOBILE end  -->
+
+    </header>
+
+    <!-- HEADER end  -->
+
+    <!-- HERO start  -->
+
+    <div class="hero">
+        <div class="hero__video">
+            <video autoplay loop muted src="./img/banner-video.mp4"></video>
+        </div>
+        <div class="hero__content">
+            <p class="hero__content--title">Nike Running</p>
+            <p class="hero__content--tag-line">WINNING ISN'T <br> COMFORTABLE</p>
+            <p class="hero__content--sub-title">if you dont't hate running a little, you dont't love running enough.</p>
+            <button class="hero__content--btn">Shop Running</button>
+        </div>
+    </div>
+
+    <!-- HERO end  -->
+
+    <!-- FEATURED start  -->
+
+
+
+    <div class="featured__container">
+        <div class="featured__title">
+            <p>Featured</p>
+        </div>
+        <div class="featured__banner">
+            <div class="featured__banner--img">
+                <img src="./img/featured-banner2.jpg" alt="">
+            </div>
+            <div class="featured__banner--img-overlay">
+                <p>Nike Pegasus 41</p>
+                <h4>DON'T WASTE<br>YOUR ENERGY</h4>
+                <button>Shop</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEATURED end  -->
+
+    <!-- LATEST start  -->
+
+    <div class="latest">
+        <div class="latest__title">
+            <p>The Latest</p>
+        </div>
+        <!-- <div class="latest__cards">
+            <div class="latest__card">
+                <div class="latest__card--img">
+                    <img src="./img/latest-card1.jpg" alt="">
+                </div>
+                <div class="latest__card--caption">
+                    <p>Women's Running</p>
+                </div>
+            </div>
+            <div class="latest__card">
+                <div class="latest__card--img">
+                    <img src="./img/latest-card2.jpg" alt="">
+                </div>
+                <div class="latest__card--caption">
+                    <p>Men's Running</p>
+                </div>
+            </div>
+            <div class="latest__card">
+                <div class="latest__card--img">
+                    <img src="./img/latest-card3.jpg" alt="">
+                </div>
+                <div class="latest__card--caption">
+                    <p>Kids Running</p>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- CARDS MOBILE start  -->
+
+        <div class="latest__cards">
+            <div class="latest__card">
+                <div class="latest__card--img">
+                    <img src="./img/latest-card1-small.jpg" alt="">
+                </div>
+                <div class="latest__card--caption">
+                    <p>Women's Running</p>
+                </div>
+            </div>
+            <div class="latest__card">
+                <div class="latest__card--img">
+                    <img src="./img/latest-card1-small.jpg" alt="">
+                </div>
+                <div class="latest__card--caption">
+                    <p>Men's Running</p>
+                </div>
+            </div>
+            <div class="latest__card">
+                <div class="latest__card--img">
+                    <img src="./img/latest-card1-small.jpg" alt="">
+                </div>
+                <div class="latest__card--caption">
+                    <p>Kids Running</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARDS MOBILE end  -->
+
+
+    </div>
+
+    <!-- LATEST end  -->
+
+    <script>
+        let navMobile = document.getElementById("navMobile")
+        let nav = document.getElementById("nav")
+
+        function openNav() {
+            navMobile.style.display = "flex"
+            document.body.style.overflow = "hidden"
+            setTimeout(function () {
+                nav.style.right = "0";
+            }, 1);
+        }
+        function closeNav() {
+            nav.style.right = "-100%";
+            setTimeout(function () {
+                navMobile.style.display = "none"
+                document.body.style.overflow = "auto"
+            }, 300);
+
+
+        }
+
+    </script>
+</body>
+
+</html>
