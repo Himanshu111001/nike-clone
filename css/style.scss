@@ -735,6 +735,62 @@
 
 // MEMBER end
 
+// FOOTER start
+
+.footer {
+  background-color: #fff;
+  &__copyright {
+    p {
+      font-size: 15px;
+      color: gray;
+      padding: 50px 30px;
+    }
+  }
+}
+.footer-accordion {
+  display: flex;
+  padding-top: 60px;
+  padding-right: 30px;
+  padding-left: 30px;
+  gap: 10px;
+  //   justify-content: space-between;
+  li {
+    width: 25%;
+    font-size: 15px;
+    line-height: 30px;
+    color: gray;
+    list-style: none;
+    input[type="checkbox"] {
+      display: none;
+    }
+    label {
+      color: #000;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .content {
+      margin-top: 30px;
+    }
+    .content p {
+      color: gray;
+      transition: 0.3s;
+    }
+    .content p:hover {
+      cursor: pointer;
+    }
+  }
+}
+.footer-accordion li:last-child .content {
+  display: flex;
+  font-size: 18px;
+}
+.footer-accordion li:last-child p {
+  margin: 5px;
+}
+
+// FOOTER end
+
 // ---------------RESPONSIVE TABLET start----------------
 
 @media (max-width: 1024px) {
@@ -823,11 +879,61 @@
 
   // BLACK COLOR end
 
+  // MEMBER start
+
   .member {
     &__card {
       width: 70%;
     }
   }
+
+  // MEMBER end
+
+  // FOOTER start
+
+  .footer {
+    .footer-accordion {
+      display: block;
+      input[type="checkbox"]:checked + label + .content {
+        max-height: 400px;
+      }
+      input[type="checkbox"]:checked + label::before {
+        content: "-";
+      }
+      li {
+        width: 100%;
+        label {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          font-size: 15px;
+          font-weight: 500;
+          cursor: pointer;
+        }
+        label::before {
+          content: "+";
+          margin-right: 10px;
+          font-size: 24px;
+          font-weight: 500;
+        }
+        .content {
+          overflow: hidden;
+          max-height: 0px;
+          transition: max-height 0.5s, padding 0.5s;
+        }
+        .content p {
+          margin-left: 30px;
+        }
+      }
+    }
+    .footer-accordion li:last-child .content {
+      display: flex;
+      font-size: 18px;
+    }
+  }
+
+  // FOOTER end
+
   //------------------------------------ HOME end -------------------------------
 }
 // ---------------RESPONSIVE TABLET end----------------
