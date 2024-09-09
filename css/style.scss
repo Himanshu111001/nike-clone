@@ -408,6 +408,244 @@
 
 //LATEST end
 
+// SPOTLIGHT start
+
+.spotlight {
+  &__title {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 30px 0px;
+    padding: 0px 30px;
+  }
+  &__cards {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    padding-bottom: 40px;
+  }
+  &__cards::-webkit-scrollbar {
+    visibility: hidden;
+    height: 10px;
+  }
+  &__cards:hover::-webkit-scrollbar {
+    visibility: visible;
+  }
+  &__cards::-webkit-scrollbar-thumb {
+    visibility: hidden;
+    background-color: gray;
+  }
+  &__cards:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+  }
+  &__card {
+    width: 300px;
+    height: 100%;
+    flex-shrink: 0;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// SPOTLIGHT end
+
+// SPORTS start
+
+.sports {
+  padding: 0px 30px;
+  &__title {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 30px 0px;
+  }
+  &__cards {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    padding-bottom: 40px;
+  }
+  &__cards::-webkit-scrollbar {
+    visibility: hidden;
+    height: 10px;
+  }
+  &__cards:hover::-webkit-scrollbar {
+    visibility: visible;
+  }
+  &__cards::-webkit-scrollbar-thumb {
+    visibility: hidden;
+    background-color: gray;
+  }
+  &__cards:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+  }
+  &__card {
+    position: relative;
+    aspect-ratio: 16/9;
+    width: 450px;
+    height: 100%;
+    flex-shrink: 0;
+    &--img {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    &--cta {
+      position: absolute;
+      display: flex;
+      justify-content: start;
+      align-items: end;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      padding: 30px;
+      //   background-color: red;
+      button {
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background-color: white;
+        color: #000;
+        padding: 5px 15px;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 20px;
+      }
+      button:hover {
+        background-color: lightgray;
+      }
+    }
+  }
+}
+
+// SPORTS end
+
+// BLACK COLOR start
+
+.black {
+  padding: 0px 30px;
+  &__title {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 30px 0px;
+  }
+  &__cards {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    padding-bottom: 40px;
+  }
+  &__cards::-webkit-scrollbar {
+    visibility: hidden;
+    height: 10px;
+  }
+  &__cards:hover::-webkit-scrollbar {
+    visibility: visible;
+  }
+  &__cards::-webkit-scrollbar-thumb {
+    visibility: hidden;
+    background-color: gray;
+  }
+  &__cards:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+  }
+  &__card {
+    flex-shrink: 0;
+    width: 30%;
+    height: 100%;
+    &--img {
+      width: 100%;
+      height: 100%;
+    }
+    &--title {
+      font-weight: 500;
+    }
+    &--category {
+      color: gray;
+    }
+    &--mrp {
+      padding-top: 10px;
+      font-weight: 500;
+    }
+  }
+}
+
+//  BLACK COLOR  end
+
+// TRENDING start
+
+.trending {
+  &__title {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 30px 0px;
+  }
+  width: 100%;
+  height: 100%;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  &__video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+    &--title {
+      font-weight: 500;
+      padding-bottom: 10px;
+    }
+    &--tag-line {
+      line-height: 50px;
+      font-size: 60px;
+      font-weight: 800;
+      color: #151515;
+      padding-bottom: 10px;
+    }
+    &--sub-title {
+      width: 70%;
+      text-align: center;
+      font-weight: 500;
+    }
+    &--btn {
+      margin: 20px 0px;
+      padding: 10px 20px;
+      border-radius: 30px;
+      border: none;
+      outline: none;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 15px;
+    }
+    &--btn:hover {
+      background-color: gray;
+    }
+  }
+}
+
+// TRENDING end
+
 // ---------------RESPONSIVE TABLET start----------------
 
 @media (max-width: 1024px) {
@@ -464,6 +702,37 @@
   //LATEST start
 
   //LATEST end
+
+  // SPOTLIGHT start
+
+  .spotlight {
+    padding: 0px 30px;
+    &__title {
+      padding: 0;
+    }
+  }
+
+  // SPOTLIGHT end
+
+  // SPORTS start
+
+  .sports {
+    &__card {
+      width: 80%;
+    }
+  }
+
+  // SPORTS end
+
+  // BLACK COLOR start
+
+  .black {
+    &__card {
+      width: 70%;
+    }
+  }
+
+  // BLACK COLOR end
   //------------------------------------ HOME end -------------------------------
 }
 // ---------------RESPONSIVE TABLET end----------------
@@ -497,6 +766,7 @@
     }
   }
   // HERO VIDEO end
+
   //FEATURED start
 
   .featured {
@@ -539,13 +809,49 @@
     }
     &__card {
       flex: 0 0 80%;
-      &--img {
-        img {
-        }
-      }
     }
   }
 
   // LATEST end
+
+  // SPORTS start
+
+  .sports {
+    &__card {
+      aspect-ratio: 4/5;
+    }
+  }
+
+  // SPORTS end
+
+  // TRENDING VIDEO start
+  .trending {
+    &__video {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 4/5;
+      position: relative;
+      overflow: hidden;
+      video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+      }
+    }
+    &__content {
+      align-items: start;
+      &--tag-line {
+        font-size: 40px;
+      }
+      &--sub-title {
+        text-align: start;
+      }
+    }
+  }
+  // TRENDING VIDEO end
 }
 // ---------------RESPONSIVE MOBILE end----------------
